@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --bg-blue: #038bb4;
+  --bg-link-blue: #00c3ff;
+  --bg-text-blue: #1F84F8;
+  --bg-text-dark: #3d3d3d;
+  --bg-icon-dark: #a9a9a9a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+p {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--bg-text-blue);
+}
+
+p:hover {
+  color: var(--bg-blue)
+}
+
+h1 {
+  font-size: 1.8em;
+  color: var(--bg-text-blue);
+  padding: 0px 0px 35px 15px;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: var(--bg-text-blue);
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid silver;
+  outline: none;
+  font-weight: 600;
+  color: #1c1c1c;
+  padding-left: 43px;
+
+}
+
+.check {
+  width: 90%;
+  align-self: self-end;
+  text-align-last: center;
+}
+
+input[type='checkbox'] {
+  display: inline-block;
+  height: 20px;
+  width: 5%;
+  vertical-align: middle;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+  color: var(--bg-icon-dark);
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.termos {
+  width: 13px;
+  height: 13px;
+}
+
+.link {
+  color: var(--bg-text-dark);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.texto_link {
+  color: var(--bg-text-dark);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.link {
+  color: var(--bg-link-blue);
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  width: 120px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background: var(--bg-text-blue);
+}
+
+button:hover {
+  background: var(--bg-blue);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../img/fundo_3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 320px;
+  height: 520px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 6px -1px #000000;
+  box-shadow: 0px 0px 6px -1px #000000;
+  background: var(--bg-blue);
+
+  display: flex;
+  align-items: center;
+}
+
+#container .banner {
+  width: 520px;
+  height: 520px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: var(--bg-blue);
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#container .box-login {
+  width: 320px;
+  height: 520px;
+  border-radius: 10px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-login .box {
+  width: 80%;
+  height: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box .social {
+  width: 240px;
+  height: 42px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.box-login .box-account {
+  width: 80%;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bubble {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 1px solid #483D8B;
+  background: var(--bg-text-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_termo_uso {
+  position: absolute;
+  width: 65%;
+  height: 520px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--bg-text-dark);
+  -webkit-box-shadow: 0px 0px 6px -1px #000000;
+  box-shadow: 0px 0px 6px -1px #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: justify;
+  overflow: auto;
+
+}
+
+#button_termo_uso {
+  align-self: center;
+  width: 120px;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  align-items: center;
+  text-align: center;
+
+}
+
+.texto_termo_uso {
+  color: var(--bg-text-dark);
+
+}

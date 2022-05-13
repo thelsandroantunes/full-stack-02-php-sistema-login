@@ -8,6 +8,9 @@
   <!-- ===== CSS Start ===== -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- ===== CSS End ===== -->
   <title>Login</title>
 </head>
@@ -31,8 +34,14 @@
 
       <div class="box">
         <h2>faça o seu login agora</h2>
-        <input type="email" name="email" id="email" placeholder="exemplo@email.com">
-        <input type="password" name="password" id="password" placeholder="Digite sua senha...">
+        <div class="input-icons">
+          <i class="fa fa-user icon"></i>
+          <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+        </div>
+        <div class="input-icons">
+          <i class="fa fa-key icon"></i>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha...">
+        </div>
 
         <a href="./pages/login/password.html">
           <p>Esqueceu a sua senha?</p>
@@ -44,12 +53,7 @@
           <p>Criar uma conta</p>
         </a>
 
-        <div class="social">
-          <img src="img/facebook.png" alt="facebook">
-          <img src="img/google.png" alt="google">
-          <img src="img/twitter.png" alt="twitter">
-          <img src="img/github.png" alt="github">
-        </div>
+
       </div>
     </div>
   </div>
