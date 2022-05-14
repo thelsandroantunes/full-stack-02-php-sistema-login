@@ -133,3 +133,33 @@ $('#link_2').click(() => {
 
   $('body').append(div)
 })
+
+const visibilityBtn_1 = document.getElementById("visibilityBtn_1")
+visibilityBtn_1.addEventListener("click", toggleVisibility)
+
+function toggleVisibility() {
+  const passwordInput = document.getElementById("password")
+  const icon = document.getElementById("icon-1")
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text"
+    icon.innerText = "visibility_off"
+  } else {
+    passwordInput.type = "password"
+    icon.innerText = "visibility"
+  }
+}
+
+const visibilityBtn_2 = document.getElementById("visibilityBtn_2")
+visibilityBtn_2.addEventListener("click", toggleVisibility_2)
+
+function toggleVisibility_2() {
+  const passwordInput = document.getElementById("cpassword")
+  const icon = document.getElementById("icon-2")
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text"
+    icon.innerText = "visibility_off"
+  } else {
+    passwordInput.type = "password"
+    icon.innerText = "visibility"
+  }
+}

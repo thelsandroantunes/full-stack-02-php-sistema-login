@@ -1,0 +1,5 @@
+.vscode
+config/PHPMailer
+pages/footer.html
+pages/header.html
+pages/login/get_password.php
